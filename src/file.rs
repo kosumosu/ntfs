@@ -131,7 +131,7 @@ pub struct NtfsFile<'n> {
 }
 
 impl<'n> NtfsFile<'n> {
-    pub(crate) fn new<T>(
+    pub fn new<T>(
         ntfs: &'n Ntfs,
         fs: &mut T,
         position: NonZeroU64,
